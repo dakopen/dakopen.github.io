@@ -13,7 +13,7 @@ body {
     text-align: left;
 }
 
-#h1 {
-    font-size: small;
+.title {
+    font-size: x-large;
     margin-top: 5%;
 }
