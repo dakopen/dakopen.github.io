@@ -31,12 +31,12 @@ body {
     bottom: 0;
     height: 5px;
     background: repeating-linear-gradient(90deg,
-            DodgerBlue,
-            DodgerBlue 25%,
-            Red 25%,
-            Red 50%,
-            ForestGreen 50%,
-            ForestGreen 75%,
+            dodgerblue,
+            dodgerblue 25%,
+            red 25%,
+            red 50%,
+            forestgreen 50%,
+            forestgreen 75%,
             gold 75%,
             gold 100%);
     border-radius: 3px;
@@ -60,7 +60,22 @@ h4 {
     bottom: 0;
     height: 3px;
     border-radius: 2px;
+}
+
+.subtitle-1::after {
     background: dodgerblue;
+}
+
+.subtitle-2::after {
+    background: red;
+}
+
+.subtitle-3::after {
+    background: forestgreen;
+}
+
+.subtitle-4::after {
+    background: gold;
 }
 
 .subsubtitle {
@@ -68,7 +83,7 @@ h4 {
     margin-bottom: 0px;
 }
 
-.sameline {
+.datesubtitle {
     margin-top: 3px;
     font-style: italic;
 }
