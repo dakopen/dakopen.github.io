@@ -12,3 +12,8 @@ body {
     background-color: #FFFFFF;
     text-align: left;
 }
+
+#h1 {
+    font-size: small;
+    margin-top: 5%;
+}
