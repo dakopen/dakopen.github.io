@@ -20,6 +20,7 @@ body {
     display: inline-block;
     position: relative;
     padding-bottom: 5px;
+    font-weight: normal;
 }
 
 .title::after {
@@ -39,4 +40,35 @@ body {
             gold 75%,
             gold 100%);
     border-radius: 3px;
+}
+
+h4 {
+    font-weight: medium;
+}
+
+.subtitle {
+    position: relative;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+
+.subtitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: dodgerblue;
+}
+
+.subsubtitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.sameline {
+    margin-top: 3px;
+    font-style: italic;
 }
