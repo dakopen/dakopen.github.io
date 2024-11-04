@@ -82,3 +82,11 @@ h4 {
 .subcontent {
     margin-left: 0.8em;
 }
+
+.internship-area {
+    padding: 1em 2em;
+    border-width: 5px;
+    border-style: solid;
+    border-image: repeating-linear-gradient(135deg, dodgerblue, dodgerblue 25%, red 25%, red 50%, forestgreen 50%, forestgreen 75%, gold 75%, gold 100%);
+    border-image-slice: 1;
+}
