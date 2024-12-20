@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,18 +7,21 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     </head>
-
     <body>
         <div class="center-div">
-            <h1 class="title">Daniel Busch</h1>
-            <p>
-                Cognitive Science student - Founder of
-                <a href="https://aussprachetrainer.org" target="_blank">AusspracheTrainer.org</a>
-                - Muesli enjoyer
-            </p>
-            <br />
-            <div>
-                <h3 class="subtitle subtitle-1">Education</h3>
+            <header>
+                <h1 class="title">Daniel Busch</h1>
+                <p>
+                    Cognitive Science student - Founder of
+                    <a href="https://aussprachetrainer.org" target="_blank"
+                        >AusspracheTrainer.org</a
+                    >
+                    - Muesli enjoyer
+                </p>
+            </header>
+
+            <section>
+                <h3 class="subtitle subtitle-blue">Education</h3>
                 <div class="subcontent">
                     <h4 class="subsubtitle">University of Washington (Seattle, USA)</h4>
                     <p class="datesubtitle">September 2024 &ndash; present</p>
@@ -26,7 +29,9 @@
                 </div>
                 <br />
                 <div class="subcontent">
-                    <h4 class="subsubtitle">Eberhard Karl University of Tübingen (Tübingen, Germany)</h4>
+                    <h4 class="subsubtitle">
+                        Eberhard Karl University of Tübingen (Tübingen, Germany)
+                    </h4>
                     <p class="datesubtitle">October 2022 &ndash; present</p>
                     <p>Bachelor's program in Cognitive Science</p>
                 </div>
@@ -36,14 +41,22 @@
                     <p class="datesubtitle">August 2014 &ndash; June 2022</p>
                     <p>German High School Diploma (Abitur)</p>
                 </div>
-            </div>
-            <br />
-            <div>
-                <h3 class="subtitle subtitle-2">Experience</h3>
+            </section>
+
+            <section>
+                <h3 class="subtitle subtitle-red">Experience</h3>
                 <div class="subcontent">
-                    <h4 class="subsubtitle">Teaching Assistant (Computer Science) at University of Tübingen</h4>
+                    <h4 class="subsubtitle">
+                        Teaching Assistant (Computer Science) at University of Tübingen
+                    </h4>
                     <p class="datesubtitle">April 2024 &ndash; August 2024</p>
-                    <p>I helped students make fewer <a href="https://en.wikipedia.org/wiki/User_error" target="_blank">error 40</a> when programming in Java.</p>
+                    <p>
+                        I helped students make fewer
+                        <a href="https://en.wikipedia.org/wiki/User_error" target="_blank"
+                            >error 40</a
+                        >
+                        when programming in Java.
+                    </p>
                 </div>
                 <br />
                 <div class="subcontent">
@@ -51,7 +64,12 @@
                     <p class="datesubtitle">June 2022 &ndash; March 2024</p>
                     <p>
                         I wrote an algorithm to classify short descriptions into
-                        <a href="https://en.wikipedia.org/wiki/Uniform_Task-Based_Management_System" target="_blank">UTBMS codes</a> leveraging a LLM, which improved accuracy by over 40%.
+                        <a
+                            href="https://en.wikipedia.org/wiki/Uniform_Task-Based_Management_System"
+                            target="_blank"
+                            >UTBMS codes</a
+                        >
+                        leveraging a LLM, which improved accuracy by over 40%.
                     </p>
                 </div>
                 <br />
@@ -60,20 +78,73 @@
                     <p class="datesubtitle">January 2021 &ndash; October 2021</p>
                     <p>I did some webscraping on merchant websites.</p>
                 </div>
-            </div>
-            <br />
-            <div>
-                <h3 class="subtitle subtitle-3">Projects</h3>
-            </div>
-            <br />
-            <div>
-                <h3 class="subtitle subtitle-4">Beliefs</h3>
-            </div>
-            <br />
-            <!-- Search for an internship area-->
-            <div class="internship-area">
-                <p>I am currently looking for an <strong>internship</strong> in cs &#8712; {backend, ml, research} anywhere in the world (preferably outside of Germany).</p>
-            </div>
+            </section>
+
+            <section>
+                <h3 class="subtitle subtitle-green">Projects</h3>
+                <div class="scrollable-container">
+                    <div class="project-card">
+                        <img
+                            src="images/aussprachetrainer-500x125.png"
+                            alt="AusspracheTrainer.org Preview"
+                        />
+                        <div class="project-info">
+                            <h4 class="project-title">AusspracheTrainer.org</h4>
+                            <p class="project-description">
+                                A web platform designed to help users improve their pronunciation
+                                with interactive audio exercises and progress tracking.
+
+                                <a href="https://aussprachetrainer.org" target="_blank"
+                                    >Check it out!</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/chess2-500x125.png" alt="Chess2 Browser-Addon Preview" />
+                        <div class="project-info">
+                            <h4 class="project-title">Chess2 Browser-Addon</h4>
+                            <p class="project-description">
+                                A tool based on the subreddit r/anarchychess that forces users to
+                                play en passant if possible and has some other minor features.
+                                <a
+                                    href="https://chromewebstore.google.com/detail/chess2/gpmpdcbjahfjgpkjdbeaigehnclbkgje"
+                                    target="_blank"
+                                    >Check it out!</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div>Skills: Python (Django, Selenium), JavaScript (React), Java</div>
+            </section>
+
+            <section>
+                <h3 class="subtitle subtitle-gold">Awards</h3>
+                <div class="subcontent">
+                    <h4 class="subsubtitle">
+                        German Federal Competition for Artificial Intelligence
+                    </h4>
+                    <p class="datesubtitle">1st Place - 1500€</p>
+                    <p>
+                        In a team of 3, we developed our own transcription AI, that transcribes
+                        audio to
+                        <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet"
+                            >IPA</a
+                        >
+                        and gives feedback on pronunciation. Later, I used it as the foundation to
+                        create the AusspracheTrainer.org platform.
+                    </p>
+                </div>
+            </section>
+
+            <section class="internship-area">
+                <p>
+                    I am currently looking for an <strong>internship</strong> in cs &#8712;
+                    {backend, ml, research} anywhere in the world (preferably outside of Germany).
+                </p>
+            </section>
         </div>
     </body>
 </html>

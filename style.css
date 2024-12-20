@@ -29,7 +29,17 @@ body {
     right: 0;
     bottom: 0;
     height: 5px;
-    background: repeating-linear-gradient(90deg, dodgerblue, dodgerblue 25%, red 25%, red 50%, forestgreen 50%, forestgreen 75%, gold 75%, gold 100%);
+    background: repeating-linear-gradient(
+        90deg,
+        dodgerblue,
+        dodgerblue 25%,
+        red 25%,
+        red 50%,
+        forestgreen 50%,
+        forestgreen 75%,
+        gold 75%,
+        gold 100%
+    );
     border-radius: 3px;
 }
 
@@ -53,19 +63,19 @@ h4 {
     border-radius: 2px;
 }
 
-.subtitle-1::after {
+.subtitle-blue::after {
     background: dodgerblue;
 }
 
-.subtitle-2::after {
+.subtitle-red::after {
     background: red;
 }
 
-.subtitle-3::after {
+.subtitle-green::after {
     background: forestgreen;
 }
 
-.subtitle-4::after {
+.subtitle-gold::after {
     background: gold;
 }
 
@@ -87,6 +97,72 @@ h4 {
     padding: 1em 2em;
     border-width: 5px;
     border-style: solid;
-    border-image: repeating-linear-gradient(135deg, dodgerblue, dodgerblue 25%, red 25%, red 50%, forestgreen 50%, forestgreen 75%, gold 75%, gold 100%);
+    border-image: repeating-linear-gradient(
+        135deg,
+        dodgerblue,
+        dodgerblue 25%,
+        red 25%,
+        red 50%,
+        forestgreen 50%,
+        forestgreen 75%,
+        gold 75%,
+        gold 100%
+    );
     border-image-slice: 1;
+}
+
+.scrollable-container {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.project-card {
+    flex: 0 0 auto;
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px;
+}
+
+.project-card:nth-child(1) {
+    box-shadow: 0 3px 5px dodgerblue;
+}
+
+.project-card:nth-child(2) {
+    box-shadow: 0 3px 5px red;
+}
+
+.project-card:nth-child(3) {
+    box-shadow: 0 3px 5px forestgreen;
+}
+
+.project-card:nth-child(4) {
+    box-shadow: 0 3px 5px gold;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+}
+
+.project-card .project-info {
+    padding: 10px;
+}
+
+.project-card .project-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+    text-align: center;
+    margin-top: 0em;
+}
+
+.project-card .project-description {
+    font-size: 14px;
+    color: #555;
 }
